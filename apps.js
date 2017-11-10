@@ -87,10 +87,20 @@ $(document).ready(function(){
     $(this).text("");
   });
 
+function purchase(){
+  var quantity= $("#beanie").val();
+  console.log(quantity);
+  // var total= ($("beanie").val() * 12);
+  //
+  // $("#total").changeevent(total);
+  // $("#total").set(total);
 
+  // if(quantity >20){
+  //   console.log("The maximum amount of beanies you can purchse is 20");
+  // };
+}; 
 
-
-
+// $("#purchasebutton").click(purchase);
 
 
   function filledin(){
@@ -139,13 +149,6 @@ $(document).ready(function(){
     }
 
   }
-
-
-
-
-
-
-
 
 $("#shipbutton").click(filledin);
 
