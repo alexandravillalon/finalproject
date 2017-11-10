@@ -1,13 +1,96 @@
 $(document).ready(function(){
   $("#beanie").mouseenter(function() {
-    $(this).text("The Beanie");
+    $(this).text("Beanie");
     $(this).css("text-align", "center");
     $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
   });
 
   $("#beanie").mouseleave(function() {
     $(this).text("");
   });
+
+  $("#pastel").mouseenter(function() {
+    $(this).text("Pastel Hair");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#pastel").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#bag").mouseenter(function() {
+    $(this).text("Social Conscious Bag");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#bag").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#fuji").mouseenter(function() {
+    $(this).text("Fujifilm Camera");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#fuji").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#backpack").mouseenter(function() {
+    $(this).text("Fjallraven Kanken Backpack");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#backpack").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#emotional").mouseenter(function() {
+    $(this).text("Emotional Justification");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#emotional").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#phone").mouseenter(function() {
+    $(this).text("IPhone X");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#phone").mouseleave(function() {
+    $(this).text("");
+  });
+
+  $("#beer").mouseenter(function() {
+    $(this).text("Craft Beer");
+    $(this).css("text-align", "center");
+    $(this).css("font-size", "50px");
+    $(this).css("color", "#89608E")
+  });
+
+  $("#beer").mouseleave(function() {
+    $(this).text("");
+  });
+
+
+
+
+
 
 
   function filledin(){
