@@ -89,16 +89,27 @@ $(document).ready(function(){
 
 function purchase(){
   var quantity= $("#beanie").val();
-  console.log(quantity);
-  // var total= ($("beanie").val() * 12);
-  //
-  // $("#total").changeevent(total);
-  // $("#total").set(total);
+  var total= ($("beanie").val() * 12);
+  $("#total").changeevent(total);
 
-  // if(quantity >20){
-  //   console.log("The maximum amount of beanies you can purchse is 20");
-  // };
-}; 
+  {
+    document.location.href = "shipping.html";
+  }
+
+
+  // $("#total").changeevent(total);
+
+
+  if(quantity >20){
+    alert("The maximum amount of beanies you can purchse is 20");
+  };
+
+  if(quantity === ""){
+    alert ("Please fill out how many beanies you would like to purchase");
+  }
+
+
+};
 
 // $("#purchasebutton").click(purchase);
 

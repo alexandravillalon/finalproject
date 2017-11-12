@@ -5,6 +5,22 @@ body{
   padding: 0;
 }
 
+.searchbar{
+  float: right;
+  margin: 0;
+
+}
+#search{
+  height: 22px;
+  width: 300px;
+}
+#searchbutton{
+  color: #89608E;
+  font-size: 22px;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: none;
+}
+
 .header{
   width: 100%;
   background-color: #89608E;
@@ -19,7 +35,11 @@ body{
 
 }
 .wrapper{
+  /*margin: auto 0;*/
   text-align: center;
+  /*width: 500px;*/
+  /*border: 2px solid black;*/
+  /*how to add border just around actual content*/
 }
 
 .namewrap{
@@ -43,6 +63,7 @@ p{
 
 }
 
-.break{
-  clear:all;
+.clear{
+  clear:both;
+  /*difference between clear all and clear both?*/
 }
