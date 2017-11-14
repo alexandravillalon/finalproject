@@ -1,9 +1,7 @@
 $(document).ready(function(){
   $("#beanie").mouseenter(function() {
     $(this).text("Beanie");
-    $(this).css("text-align", "center");
-    $(this).css("font-size", "50px");
-    $(this).css("color", "#89608E")
+
   });
 
   $("#beanie").mouseleave(function() {
@@ -87,31 +85,32 @@ $(document).ready(function(){
     $(this).text("");
   });
 
+
 function purchase(){
   var quantity= $("#beanie").val();
-  var total= ($("beanie").val() * 12);
-  $("#total").changeevent(total);
+  var total= (parseInt(quantity) * 12);
 
-  {
-    document.location.href = "shipping.html";
-  }
-
-
-  // $("#total").changeevent(total);
-
+  $("#total").val(total);
 
   if(quantity >20){
-    alert("The maximum amount of beanies you can purchse is 20");
+    alert("The maximum amount of beanies you can purchase is 20");
   };
 
-  if(quantity === ""){
+  if(quantity === "" || quantity ===0){
     alert ("Please fill out how many beanies you would like to purchase");
-  }
-
+  };
 
 };
 
-// $("#purchasebutton").click(purchase);
+$("#beanie").change(purchase);
+
+function itemFilledIn() {
+  if (quanity > 0) {
+    document.location.href = "shipping.html";
+  }
+}
+
+$("#purchasebutton").click(itemFilledIn);
 
 
   function filledin(){
@@ -121,31 +120,6 @@ function purchase(){
     var city =$("#city").val();
     var state =$("#state").val();
     var zipcode= $("#zipCode").val();
-
-
-    // if(firstname === ""){
-    //   alert("First name not filled in");
-    // }
-    //
-    // if(lastname === ""){
-    //   alert("Last name not filled in");
-    // }
-    //
-    // if(address === ""){
-    //   alert ("Address not filled in");
-    // }
-    //
-    // if(city === ""){
-    //   alert ("City not filled in");
-    // }
-    //
-    // if(state === ""){
-    //   alert ("State not filled in");
-    // }
-    //
-    // if(zipcode === ""){
-    //   alert ("Zip Code not filled in");
-    // }
 
     if (firstname === "" || lastname === "" || address === "" || city === "" || state === "" || zipcode === ""){
       alert ("One or more of the text fields was left blank. Please enter correct information.")
@@ -161,6 +135,6 @@ function purchase(){
 
   }
 
-$("#shipbutton").click(filledin);
+  $("#shipbutton").click(filledin);
 
 });

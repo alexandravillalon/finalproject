@@ -64,6 +64,7 @@ h2{
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #89608E;
+
 }
 
 .item{
@@ -82,7 +83,9 @@ h2{
 
 #beanie{
   background-image: url("../Images/beanie.jpg");
-
+  text-align: center;
+  font-size: 50px;
+  color:#89608E;
 }
 /*
 .hide-me {
@@ -122,3 +125,45 @@ h2{
   background-image: url("../Images/beer.jpg");
   background-position: center top;
 }
+
+
+
+@media all and (max-width: 400px){
+  h3{
+    font-size: 25px;
+  }
+  img{
+    width: 55px;
+  }
+  li{
+    list-style-type: none;
+    display: block;
+
+  	margin: 5px;
+
+  }
+  /*ul{
+    text-align: center;
+  }*/
+  ul li a{
+    text-decoration: none;
+    font-size: 10px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: black;
+    /*text-align: center;*/
+    /*border: 2px solid turquoise;*/
+    background-color: none;
+    /*padding: 3px;*/
+    margin: 2px;
+    float: left;
+
+  }
+
+  h2{
+    margin-top: 100px;
+  }
+
+
+
+
+};
