@@ -96,16 +96,18 @@ function purchase(){
     alert("The maximum amount of beanies you can purchase is 20");
   };
 
-  if(quantity === "" || quantity ===0){
+  if(quantity === 0){
     alert ("Please fill out how many beanies you would like to purchase");
+    // ?? doesnt alert
   };
+
 
 };
 
 $("#beanie").change(purchase);
 
 function itemFilledIn() {
-  if (quanity > 0) {
+  if (quantity !== "" && quantity !== 0) {
     document.location.href = "shipping.html";
   }
 }
